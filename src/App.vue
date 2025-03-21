@@ -49,23 +49,32 @@
     <section class="mt-32">
       <div class="px-24 py-20 flex justify-between rounded-xl shadow-md">
         <div class="flex items-center">
-          <i class="text-[#F53838] bg-[#FFECEC] p-4 rounded-full mr-11" v-html="feather.icons.user.toSvg()"></i>
+          <i
+            class="text-[#F53838] bg-[#FFECEC] p-4 rounded-full mr-11"
+            v-html="feather.icons.user.toSvg()"
+          ></i>
           <div class="flex flex-col">
             <span class="text-2xl font-bold text-[#0B132A]">90+</span>
             <span class="text-xl text-[#4F5665]">Users</span>
           </div>
         </div>
-        <hr class="border h-32 border-[#EEEFF2]">
+        <hr class="border h-32 border-[#EEEFF2]" />
         <div class="flex items-center">
-          <i class="text-[#F53838] bg-[#FFECEC] p-4 rounded-full mr-11" v-html="feather.icons.map.toSvg()"></i>
+          <i
+            class="text-[#F53838] bg-[#FFECEC] p-4 rounded-full mr-11"
+            v-html="feather.icons.map.toSvg()"
+          ></i>
           <div class="flex flex-col">
             <span class="text-2xl font-bold text-[#0B132A]">30+</span>
             <span class="text-xl text-[#4F5665]">Locations</span>
           </div>
         </div>
-        <hr class="border h-32 border-[#EEEFF2]">
+        <hr class="border h-32 border-[#EEEFF2]" />
         <div class="flex items-center">
-          <i class="text-[#F53838] bg-[#FFECEC] p-4 rounded-full mr-11" v-html="feather.icons.server.toSvg()"></i>
+          <i
+            class="text-[#F53838] bg-[#FFECEC] p-4 rounded-full mr-11"
+            v-html="feather.icons.server.toSvg()"
+          ></i>
           <div class="flex flex-col">
             <span class="text-2xl font-bold text-[#0B132A]">50+</span>
             <span class="text-xl text-[#4F5665]">Servers</span>
@@ -76,28 +85,49 @@
     <!-- preference -->
     <section class="mt-28">
       <div class="flex justify-around items-center">
-        <img class="max-w-[508px]" src="./images/preference.png" alt="">
+        <img class="max-w-[508px]" src="./images/preference.png" alt="" />
         <div class="max-w-[420px]">
-          <h3 class="text-[#0B132A] text-4xl font-medium mb-5">We Provide Many Features You Can Use</h3>
-          <p class="text-[#4F5665] text-base mb-5">You can explore the features that we provide with fun and have their own functions each feature.</p>
-          <ul>
+          <h3 class="text-[#0B132A] text-4xl font-medium mb-5">
+            We Provide Many Features You Can Use
+          </h3>
+          <p class="text-[#4F5665] text-base mb-5">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <ul class="space-y-2">
             <li class="flex mt-4 gap-2.5">
-              <i class="bg-green-600 text-white rounded-xl" v-html="feather.icons['check-circle'].toSvg()"></i><span>Powerfull online protection.</span>
+              <i
+                class="bg-green-600 text-white rounded-xl"
+                v-html="feather.icons['check-circle'].toSvg()"
+              ></i
+              ><span>Powerfull online protection.</span>
             </li>
           </ul>
           <ul>
             <li class="flex mt-4 gap-2.5">
-              <i class="bg-green-600 text-white rounded-xl" v-html="feather.icons['check-circle'].toSvg()"></i><span>Internet without borders.</span>
+              <i
+                class="bg-green-600 text-white rounded-xl"
+                v-html="feather.icons['check-circle'].toSvg()"
+              ></i
+              ><span>Internet without borders.</span>
             </li>
           </ul>
           <ul>
             <li class="flex mt-4 gap-2.5">
-              <i class="bg-green-600 text-white rounded-xl" v-html="feather.icons['check-circle'].toSvg()"></i><span>Supercharged VPN</span>
+              <i
+                class="bg-green-600 text-white rounded-xl"
+                v-html="feather.icons['check-circle'].toSvg()"
+              ></i
+              ><span>Supercharged VPN</span>
             </li>
           </ul>
           <ul>
             <li class="flex mt-4 gap-2.5">
-              <i class="bg-green-600 text-white rounded-xl" v-html="feather.icons['check-circle'].toSvg()"></i><span>No specific time limits.</span>
+              <i
+                class="bg-green-600 text-white rounded-xl"
+                v-html="feather.icons['check-circle'].toSvg()"
+              ></i
+              ><span>No specific time limits.</span>
             </li>
           </ul>
         </div>
@@ -105,99 +135,173 @@
     </section>
     <!-- Plan -->
     <section class="mt-52">
-      <div class="flex flex-col text-center">
-        <h2 class="text-[#0B132A] text-4xl font-medium">Choose Your Plan</h2>  
-        <p class="text-base text-[#4F5665] mt-5">Let's choose the package that is best for you and explore it happily and cheerfully.</p>
+      <div class="flex flex-col text-center items-center">
+        <h2 class="text-[#0B132A] text-4xl font-medium">Choose Your Plan</h2>
+        <p class="text-base text-[#4F5665] w-[520px] mt-5">
+          Let's choose the package that is best for you and explore it happily
+          and cheerfully.
+        </p>
       </div>
       <!-- article 1 -->
-       <div class="flex items-center justify-around mt-16">
-         <article class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl">
-           <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box">
-           <span class="text-lg font-medium text-[#0B132A]">Free Plan</span>
-           <ul>
-             <li class="flex gap-6 mb-2.5 mt-7">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Unlimited Bandwitch</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Encrypted Connection</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>No Traffic Logs</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Works on All Devices</span>
-             </li>
-           </ul>
-           <div class="flex flex-col mt-32">
-             <span class="text-2xl font-medium text-[#0B132A] mb-5">Free</span>
-             <button class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition">Select</button>
-           </div>
-         </article>
-         <!-- article 2 -->
-         <article class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl">
-           <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box">
-           <span class="text-lg font-medium text-[#0B132A]">Premium Plan</span>
-           <ul>
-             <li class="flex gap-6 mb-2.5 mt-7">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Unlimited Bandwitch</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Encrypted Connection</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>No Traffic Logs</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Works on All Devices</span>
-             </li>
-           </ul>
-           <div class="flex flex-col mt-32">
-             <span class="text-2xl font-medium text-[#0B132A] mb-5">$9 <span class="text-[#4F5665]">/ mo</span></span>
-             <button class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition">Select</button>
-           </div>
-         </article>
-         <!-- article 3 -->
-         <article class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl">
-           <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box">
-           <span class="text-lg font-medium text-[#0B132A]">Premium Plan</span>
-           <ul>
-             <li class="flex gap-6 mb-2.5 mt-7">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Unlimited Bandwitch</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Encrypted Connection</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>No Traffic Logs</span>
-             </li>
-           </ul>
-           <ul>
-             <li class="flex gap-6 mb-2.5">
-               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i><span>Works on All Devices</span>
-             </li>
-           </ul>
-           <div class="flex flex-col mt-32">
-             <span class="text-2xl font-medium text-[#0B132A] mb-5">$12 <span class="text-[#4F5665]">/ mo</span></span>
-             <button class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition">Select</button>
-           </div>
-         </article>
-       </div>
+      <div class="flex items-center justify-around mt-20">
+        <article
+          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl"
+        >
+          <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box" />
+          <span class="text-lg font-medium text-[#0B132A]">Free Plan</span>
+          <ul>
+            <li class="flex gap-6 mb-2.5 mt-7">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Unlimited Bandwitch</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Encrypted Connection</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>No Traffic Logs</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Works on All Devices</span>
+            </li>
+          </ul>
+          <div class="flex flex-col mt-32">
+            <span class="text-2xl font-medium text-[#0B132A] mb-5">Free</span>
+            <button
+              class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition"
+            >
+              Select
+            </button>
+          </div>
+        </article>
+        <!-- article 2 -->
+        <article
+          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl"
+        >
+          <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box" />
+          <span class="text-lg font-medium text-[#0B132A]">Premium Plan</span>
+          <ul>
+            <li class="flex gap-6 mb-2.5 mt-7">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Unlimited Bandwitch</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Encrypted Connection</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>No Traffic Logs</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Works on All Devices</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Connect Anyware</span>
+            </li>
+          </ul>
+          <div class="flex flex-col mt-32">
+            <span class="text-2xl font-medium text-[#0B132A] mb-5"
+              >$9 <span class="text-[#4F5665]">/ mo</span></span
+            >
+            <button
+              class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition"
+            >
+              Select
+            </button>
+          </div>
+        </article>
+        <!-- article 3 -->
+        <article
+          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl"
+        >
+          <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box" />
+          <span class="text-lg font-medium text-[#0B132A]">Premium Plan</span>
+          <ul>
+            <li class="flex gap-6 mb-2.5 mt-7">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Unlimited Bandwitch</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Encrypted Connection</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>No Traffic Logs</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Works on All Devices</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Connect Anyware</span>
+            </li>
+          </ul>
+          <ul>
+            <li class="flex gap-6 mb-2.5">
+              <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
+              ><span>Get New Features</span>
+            </li>
+          </ul>
+          <div class="flex flex-col mt-32">
+            <span class="text-2xl font-medium text-[#0B132A] mb-5"
+              >$12 <span class="text-[#4F5665]">/ mo</span></span
+            >
+            <button
+              class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition"
+            >
+              Select
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Map -->
+    <section>
+      <div class="flex flex-col text-center items-center mt-36">
+        <h2 class="text-4xl text-[#0B132A] font-medium mb-5 w-[380px] leading-12">Huge Global Network of Fast VPN</h2>
+        <p class="text-base text-[#4F5665] mb-40 w-[500px] leading-7">See <span class="text-[#4F5665] font-medium">LaslesVPN</span> everywhere to make it easier for you when you move locations.</p>
+      </div>
+      <div class="flex justify-center items-center">
+        <img class="max-w-5xl" src="./images/world.png" alt="World">
+      </div>
+      <div class="flex justify-center items-center mt-16">
+        <img src="./images/companiesLogo.png" alt="CompaniesLogo">
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col text-center items-center mt-32">
+        <h3 class="text-4xl text-[#0B132A] font-medium mb-5 w-[400px] leading-12">Trusted by Thousands of Happy Customer</h3>
+        <p class="text-base text-[#4F5665] w-[500px] leading-7">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+      </div>
     </section>
   </main>
 </template>
