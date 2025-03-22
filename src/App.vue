@@ -287,23 +287,214 @@
     <!-- Map -->
     <section>
       <div class="flex flex-col text-center items-center mt-36">
-        <h2 class="text-4xl text-[#0B132A] font-medium mb-5 w-[380px] leading-12">Huge Global Network of Fast VPN</h2>
-        <p class="text-base text-[#4F5665] mb-40 w-[500px] leading-7">See <span class="text-[#4F5665] font-medium">LaslesVPN</span> everywhere to make it easier for you when you move locations.</p>
+        <h2
+          class="text-4xl text-[#0B132A] font-medium mb-5 w-[380px] leading-12"
+        >
+          Huge Global Network of Fast VPN
+        </h2>
+        <p class="text-base text-[#4F5665] mb-40 w-[500px] leading-7">
+          See
+          <span class="text-[#4F5665] font-medium">LaslesVPN</span> everywhere
+          to make it easier for you when you move locations.
+        </p>
       </div>
       <div class="flex justify-center items-center">
-        <img class="max-w-5xl" src="./images/world.png" alt="World">
+        <img class="max-w-5xl" src="./images/world.png" alt="World" />
       </div>
       <div class="flex justify-center items-center mt-16">
-        <img src="./images/companiesLogo.png" alt="CompaniesLogo">
+        <img src="./images/companiesLogo.png" alt="CompaniesLogo" />
       </div>
     </section>
     <section>
       <div class="flex flex-col text-center items-center mt-32">
-        <h3 class="text-4xl text-[#0B132A] font-medium mb-5 w-[400px] leading-12">Trusted by Thousands of Happy Customer</h3>
-        <p class="text-base text-[#4F5665] w-[500px] leading-7">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+        <h3
+          class="text-4xl text-[#0B132A] font-medium mb-5 w-[400px] leading-12"
+        >
+          Trusted by Thousands of Happy Customer
+        </h3>
+        <p class="text-base text-[#4F5665] w-[500px] leading-7">
+          These are the stories of our customers who have joined us with great
+          pleasure when using this crazy feature.
+        </p>
       </div>
     </section>
+    <!-- Customers -->
+    <section>
+      <div class="flex justify-start relative overflow-hidden gap-12">
+        <!-- article 1 -->
+        <article
+          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg mt-24 shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <img
+              class="w-12 object-cover mr-5"
+              src="./images/Users/user1.png"
+              alt="User"
+            />
+            <div>
+              <p class="text-xl text-[#0B132A] font-medium leading-7">
+                Viezh Robert
+              </p>
+              <p class="text-sm text-[#4F5665] leading-7">Warsaw, Poland</p>
+            </div>
+            <div class="flex items-center gap-2 ml-auto">
+              <p class="text-base text-[#0B132A] leading-7">4.5</p>
+              <i class="text-amber-400" v-html="feather.icons.star.toSvg()"></i>
+            </div>
+          </div>
+          <p class="text-base text-[#0B132A] mt-5 max-w-md">
+            “Wow... I am very happy to use this VPN, it turned out to be more
+            than my expectations and so far there have been no problems.
+            LaslesVPN always the best”.
+          </p>
+        </article>
+        <!-- article 2 -->
+        <article
+          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg mt-24 shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <img
+              class="w-12 object-cover mr-5"
+              src="./images/Users/user2.png"
+              alt="User"
+            />
+            <div>
+              <p class="text-xl text-[#0B132A] font-medium leading-7">
+                Yessica Christy
+              </p>
+              <p class="text-sm text-[#4F5665] leading-7">Shanxi, China</p>
+            </div>
+            <div class="flex items-center gap-2 ml-auto">
+              <p class="text-base text-[#0B132A] leading-7">4.5</p>
+              <i class="text-amber-400" v-html="feather.icons.star.toSvg()"></i>
+            </div>
+          </div>
+          <p class="text-base text-[#0B132A] mt-5 max-w-md">
+            “I like it because I like to travel far and still can connect with
+            high speed.”.
+          </p>
+        </article>
+        <!-- article 3 -->
+        <article
+          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg mt-24 shrink-0"
+        >
+          <div class="flex items-center space-x-3">
+            <img
+              class="w-12 object-cover mr-5"
+              src="./images/Users/user3.png"
+              alt="User"
+            />
+            <div>
+              <p class="text-xl text-[#0B132A] font-medium leading-7">
+                Kim Young Jou
+              </p>
+              <p class="text-sm text-[#4F5665] leading-7">Seoul, South Korea</p>
+            </div>
+            <div class="flex items-center gap-2 ml-auto">
+              <p class="text-base text-[#0B132A] leading-7">4.5</p>
+              <i class="text-amber-400" v-html="feather.icons.star.toSvg()"></i>
+            </div>
+          </div>
+          <p class="text-base text-[#0B132A] mt-5 max-w-md">
+            “This is very unusual for my business that currently requires a
+            virtual private network that has high security.”.
+          </p>
+        </article>
+      </div>
+      <div class="flex space-x-1 mt-22 justify-between">
+        <div class="items-center">
+          <button
+            class="min-w-9 rounded-full bg-[#F53838] py-2 px-3 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-[#F53838] focus:shadow-none active:bg-[#F53838] hover:bg-red-600 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 cursor-pointer"
+          ></button>
+          <button
+            class="max-w-2 rounded-full border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-300 hover:border-slate-300 focus:text-white focus:bg-slate-300 focus:border-slate-300 active:border-slate-300 active:text-white active:bg-slate-400 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 cursor-pointer"
+          ></button>
+          <button
+            class="max-w-2 rounded-full border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-300 hover:border-slate-300 focus:text-white focus:bg-slate-300 focus:border-slate-300 active:border-slate-300 active:text-white active:bg-slate-400 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 cursor-pointer"
+          ></button>
+          <button
+            class="max-w-2 rounded-full border border-slate-300 py-2 px-3 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-300 hover:border-slate-300 focus:text-white focus:bg-slate-300 focus:border-slate-300 active:border-slate-300 active:text-white active:bg-slate-400 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2 cursor-pointer"
+          ></button>
+        </div>
+        <div class="flex items-center gap-5">
+          <button
+            class="w-full p-2 border-2 border-[#F53838] rounded-full cursor-pointer text-[#F53838] hover:shadow-md hover:bg-[#F53838] hover:text-white transition"
+          >
+            <i v-html="feather.icons['arrow-left'].toSvg()"></i>
+          </button>
+          <button
+            class="w-full p-2 border-2 border-[#F53838] rounded-full cursor-pointer text-[#F53838] hover:shadow-md hover:bg-[#F53838] hover:text-white transition"
+          >
+            <i v-html="feather.icons['arrow-right'].toSvg()"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Subscribe -->
+    <div class="flex justify-center w-full mt-16">
+      <div class="flex shadow-lg p-12 rounded-xl">
+        <div class="space-x-96">
+          <h2 class="text-4xl text-[#0B132A] font-medium max-w-[350px] leading-11">Subscribe Now for Get Special Features!</h2>
+          <p class="text-base text-[#4F5665] leading-7 mt-5">Let's subscribe with us and find the fun.</p>
+        </div>
+        <div class="flex items-center">
+          <button class="px-10 py-4 rounded-xl text-white font-bold shadow-[#F53838] bg-[#F53838] cursor-pointer hover:bg-red-600 transition">Subscribe Now</button>
+        </div>
+      </div>
+    </div>
   </main>
+  <footer class="p-9">
+    <div class="flex justify-between">
+      <div class="mr-60">
+        <img class="max-h-9 mb-5" src="./images/Logo.png" alt="Logo">
+        <p class="mb-8 max-w-[300px] text-base text-[#4F5665]"><span class="font-medium">LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
+        <div class="flex gap-5 mb-8">
+          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"><i v-html="feather.icons.facebook.toSvg()"></i></a>
+          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"><i v-html="feather.icons.twitter.toSvg()"></i></a>
+          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"><i v-html="feather.icons.instagram.toSvg()"></i></a>
+        </div>
+        <span class="text-base text-[#AFB5C0]">©2020Lasles<span class="text-base text-[#AFB5C0] font-medium">VPN</span></span>
+      </div>
+      <!-- Products -->
+      <div>
+        <span class="text-xl text-[#0B132A] font-medium leading-7">Product</span>
+        <nav>
+          <ul class="space-y-2 text-base text-[#4F5665] leading-7">
+            <li class="mt-5"><a href="#!">Download</a></li>
+            <li><a href="#!">Pricing</a></li>
+            <li><a href="#!">Locations</a></li>
+            <li><a href="#!">Server</a></li>
+            <li><a href="#!">Countries</a></li>
+            <li><a href="#!">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Engage -->
+      <div class="ml-36">
+        <span class="text-xl text-[#0B132A] font-medium leading-7">Engage</span>
+        <nav>
+          <ul class="space-y-2 text-base text-[#4F5665] leading-7">
+            <li class="mt-5"><a href="#!">LaslesVPN ? </a></li>
+            <li><a href="#!">FAQ</a></li>
+            <li><a href="#!">Tutorials</a></li>
+            <li><a href="#!">About Us</a></li>
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Earn money -->
+      <div class="ml-30">
+        <span class="text-xl text-[#0B132A] font-medium leading-7">Earn money</span>
+        <nav>
+          <ul class="space-y-2 text-base text-[#4F5665] leading-7">
+            <li class="mt-5"><a href="#!">Affiliate</a></li>
+            <li><a href="#!">Become Partner</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </template>
 
 <script>
