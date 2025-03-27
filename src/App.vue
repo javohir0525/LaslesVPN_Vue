@@ -143,37 +143,31 @@
         </p>
       </div>
       <!-- article 1 -->
-      <div class="flex items-center justify-around mt-20">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-20">
         <article
-          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl"
+          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl flex flex-col"
         >
           <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box" />
           <span class="text-lg font-medium text-[#0B132A]">Free Plan</span>
-          <ul>
+          <ul class="mb-10">
             <li class="flex gap-6 mb-2.5 mt-7">
               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
               ><span>Unlimited Bandwitch</span>
             </li>
-          </ul>
-          <ul>
             <li class="flex gap-6 mb-2.5">
               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
               ><span>Encrypted Connection</span>
             </li>
-          </ul>
-          <ul>
             <li class="flex gap-6 mb-2.5">
               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
               ><span>No Traffic Logs</span>
             </li>
-          </ul>
-          <ul>
             <li class="flex gap-6 mb-2.5">
               <i class="text-green-600" v-html="feather.icons.check.toSvg()"></i
               ><span>Works on All Devices</span>
             </li>
           </ul>
-          <div class="flex flex-col mt-32">
+          <div class="flex flex-col mt-auto">
             <span class="text-2xl font-medium text-[#0B132A] mb-5">Free</span>
             <button
               class="text-[#F53838] px-14 py-2 border-2 border-[#F53838] rounded-full cursor-pointer hover:bg-[#F53855] hover:text-white transition"
@@ -184,7 +178,7 @@
         </article>
         <!-- article 2 -->
         <article
-          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl"
+          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl flex flex-col"
         >
           <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box" />
           <span class="text-lg font-medium text-[#0B132A]">Premium Plan</span>
@@ -231,7 +225,7 @@
         </article>
         <!-- article 3 -->
         <article
-          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl"
+          class="px-24 py-16 text-center border-2 border-[#DDDDDD] rounded-xl flex flex-col"
         >
           <img class="max-h-40 mb-7 mx-auto" src="./images/Box.png" alt="Box" />
           <span class="text-lg font-medium text-[#0B132A]">Premium Plan</span>
@@ -320,10 +314,13 @@
     </section>
     <!-- Customers -->
     <section>
-      <div class="flex justify-start relative overflow-hidden gap-12">
+      <div class="mt-24 flex relative overflow-hidden gap-12">
+        <div
+          class="absolute top-0 right-0 w-44 h-full bg-gradient-to-l from-white to-transparent"
+        />
         <!-- article 1 -->
         <article
-          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg mt-24 shrink-0"
+          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg shrink-0"
         >
           <div class="flex items-center space-x-3">
             <img
@@ -350,7 +347,7 @@
         </article>
         <!-- article 2 -->
         <article
-          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg mt-24 shrink-0"
+          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg shrink-0"
         >
           <div class="flex items-center space-x-3">
             <img
@@ -376,7 +373,7 @@
         </article>
         <!-- article 3 -->
         <article
-          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg mt-24 shrink-0"
+          class="border-2 border-[#DDDDDD] transition hover:border-[#F53838] rounded-xl shadow-md p-5 max-w-lg shrink-0"
         >
           <div class="flex items-center space-x-3">
             <img
@@ -434,30 +431,56 @@
     <div class="flex justify-center w-full mt-16">
       <div class="flex shadow-lg p-12 rounded-xl">
         <div class="space-x-96">
-          <h2 class="text-4xl text-[#0B132A] font-medium max-w-[350px] leading-11">Subscribe Now for Get Special Features!</h2>
-          <p class="text-base text-[#4F5665] leading-7 mt-5">Let's subscribe with us and find the fun.</p>
+          <h2
+            class="text-4xl text-[#0B132A] font-medium max-w-[350px] leading-11"
+          >
+            Subscribe Now for Get Special Features!
+          </h2>
+          <p class="text-base text-[#4F5665] leading-7 mt-5">
+            Let's subscribe with us and find the fun.
+          </p>
         </div>
         <div class="flex items-center">
-          <button class="px-10 py-4 rounded-xl text-white font-bold shadow-[#F53838] bg-[#F53838] cursor-pointer hover:bg-red-600 transition">Subscribe Now</button>
+          <button
+            class="px-10 py-4 rounded-xl text-white font-bold shadow-[#F53838] bg-[#F53838] cursor-pointer hover:bg-red-600 transition"
+          >
+            Subscribe Now
+          </button>
         </div>
       </div>
     </div>
   </main>
-  <footer class="p-9">
+  <!-- footer -->
+  <footer class="p-9 container mx-auto">
     <div class="flex justify-between">
       <div class="mr-60">
-        <img class="max-h-9 mb-5" src="./images/Logo.png" alt="Logo">
-        <p class="mb-8 max-w-[300px] text-base text-[#4F5665]"><span class="font-medium">LaslesVPN</span> is a private virtual network that has unique features and has high security.</p>
+        <img class="max-h-9 mb-5" src="./images/Logo.png" alt="Logo" />
+        <p class="mb-8 max-w-[300px] text-base text-[#4F5665]">
+          <span class="font-medium">LaslesVPN</span> is a private virtual
+          network that has unique features and has high security.
+        </p>
         <div class="flex gap-5 mb-8">
-          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"><i v-html="feather.icons.facebook.toSvg()"></i></a>
-          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"><i v-html="feather.icons.twitter.toSvg()"></i></a>
-          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"><i v-html="feather.icons.instagram.toSvg()"></i></a>
+          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"
+            ><i v-html="feather.icons.facebook.toSvg()"></i
+          ></a>
+          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"
+            ><i v-html="feather.icons.twitter.toSvg()"></i
+          ></a>
+          <a class="text-[#F53838] p-3 shadow-lg rounded-full" href="#!"
+            ><i v-html="feather.icons.instagram.toSvg()"></i
+          ></a>
         </div>
-        <span class="text-base text-[#AFB5C0]">©2020Lasles<span class="text-base text-[#AFB5C0] font-medium">VPN</span></span>
+        <span class="text-base text-[#AFB5C0]"
+          >©2020Lasles<span class="text-base text-[#AFB5C0] font-medium"
+            >VPN</span
+          ></span
+        >
       </div>
       <!-- Products -->
       <div>
-        <span class="text-xl text-[#0B132A] font-medium leading-7">Product</span>
+        <span class="text-xl text-[#0B132A] font-medium leading-7"
+          >Product</span
+        >
         <nav>
           <ul class="space-y-2 text-base text-[#4F5665] leading-7">
             <li class="mt-5"><a href="#!">Download</a></li>
@@ -485,7 +508,9 @@
       </div>
       <!-- Earn money -->
       <div class="ml-30">
-        <span class="text-xl text-[#0B132A] font-medium leading-7">Earn money</span>
+        <span class="text-xl text-[#0B132A] font-medium leading-7"
+          >Earn money</span
+        >
         <nav>
           <ul class="space-y-2 text-base text-[#4F5665] leading-7">
             <li class="mt-5"><a href="#!">Affiliate</a></li>
